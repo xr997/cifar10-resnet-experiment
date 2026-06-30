@@ -1,0 +1,30 @@
+# Ignore everything by default, then allow only reproducible code essentials.
+/*
+
+!.gitignore
+!.gitattributes
+!README.md
+!requirements.txt
+!src/
+!src/**
+!scripts/
+!scripts/**
+scripts/generate_word_report*.py
+
+# Keep generated/cache files out even inside allowed code directories.
+__pycache__/
+**/__pycache__/
+*.py[cod]
+
+# Large/generated experiment artifacts.
+data/
+results/
+reports/
+*.pt
+*.pth
+*.onnx
+*.png
+*.csv
+*.json
+*.docx
+*.pdf
